@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
+</head>
+<body class="bg-white">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a href="" class="navbar-brand ml-3" title="">TASK APP 1.0</a>
+
+		<ul class="navbar-nav ml-auto mr-3">
+			<form class="form-inline">
+				<input type="search" id="search" class="form-control" placeholder="">
+				<button type="submit" class="ml-1 btn btn-success text-uppercase">search</button>
+			</form>
+		</ul>
+	</nav>
+
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-12 col-lg-5">
+				<div class="card">
+					<div class="card-body">
+						<form id="task">
+							<div class="form-group">
+								<input type="hidden" id="id">
+								<input type="text" id="nombre" placeholder="Nombre de la tarea" class="form-control">
+							</div>
+							<div class="form-group">
+								<textarea id="descripcion" class="form-control" rows="10" placeholder="Descripcion de la tarea"></textarea>
+							</div>
+							<button type="submit" class="btn btn-block btn-success text-center text-uppercase">
+								Guardar tarea
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-7">
+				<div class="card mb-5 shadow" id="resulTareas">
+					<div class="card-body" id="tareas">
+						
+					</div>
+				</div>
+				<table class="table table-bordered table-sm">
+					<thead>
+						<tr class="text-center">
+							<th>ID</th>
+							<th>Nombre</th>
+							<th>Descripcion</th>
+							<th colspan="2">Accion</th>
+						</tr>
+					</thead>
+					<tbody id="tareas1">
+							
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
